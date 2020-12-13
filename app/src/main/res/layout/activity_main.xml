@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="30dp"
+            android:text="Famous Influencers"
+            />
+        <Button
+            android:id="@+id/btnInspiration"
+            android:layout_width="150dp"
+            android:layout_below="@id/tvHeader"
+            android:text="INSPIRATION"
+            android:layout_height="wrap_content"
+            android:onClick="inspirationQuote"/>
+        <TextView
+            android:id="@+id/tvTop3"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvHeader"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@id/btnInspiration"
+            android:text="TOP 3"
+            android:gravity="center"
+            android:textSize="26dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlElonMusk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_below="@id/rlHeader">
+
+        <ImageView
+            android:id="@+id/ivMusk"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/musk" />
+
+        <TextView
+            android:id="@+id/tvMuskName"
+            android:textSize="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivMusk"
+            android:text="Elon Musk" />
+        <TextView
+            android:id="@+id/tvMuskDate"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvMuskName"
+            android:layout_toRightOf="@+id/ivMusk"
+            android:text="1971 - present" />
+
+        <TextView
+            android:id="@+id/tvMuskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/tvMuskDate"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivMusk"
+            android:text="founder, CEO, CTO and chief designer of SpaceX; early investor, CEO..."
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlMarkZuckerberg"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlElonMusk">
+
+        <ImageView
+            android:id="@+id/ivMark"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/mark" />
+
+        <TextView
+            android:id="@+id/tvMarkName"
+            android:textSize="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivMark"
+            android:text="Mark Zuckerberg" />
+
+        <TextView
+            android:id="@+id/tvMarkDate"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvMarkName"
+            android:layout_toRightOf="@+id/ivMark"
+            android:text="1984 - present" />
+
+        <TextView
+            android:id="@+id/tvMarkDescription"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/tvMarkDate"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivMark"
+            android:text="American media magnate, internet entrepreneur, and philanthropist"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlSteveJobs"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlMarkZuckerberg">
+
+        <ImageView
+            android:id="@+id/ivSteve"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/jobs" />
+
+        <TextView
+            android:id="@+id/tvSteveName"
+            android:textSize="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivSteve"
+            android:text="Steve Jobs" />
+        <TextView
+            android:id="@+id/tvSteveDate"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvSteveName"
+            android:layout_toRightOf="@+id/ivSteve"
+            android:text="1955 - 2011" />
+
+        <TextView
+            android:id="@+id/tvSteveDescription"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/tvSteveDate"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivSteve"
+            android:text="American business magnate, industrial designer, investor, and media proprietor"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/etAddDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Add description"
+        android:inputType="text"
+        android:layout_below="@id/rlSteveJobs" />
+    <Button
+        android:id="@+id/btnEditDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Edit description"
+        android:layout_below="@id/etAddDescription"
+        android:onClick="addDescription"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnEditDescription"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:id="@+id/rbMusk"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Elon"/>
+
+        <RadioButton
+            android:id="@+id/rbMark"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Mark" />
+
+        <RadioButton
+            android:id="@+id/rbSteve"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Steve" />
+    </RadioGroup>
+
+</RelativeLayout>
